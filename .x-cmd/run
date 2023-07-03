@@ -1,0 +1,15 @@
+(
+
+result_folder="$PWD/result"
+
+git clone git@github.com:x-cmd/repkg repkg
+(
+    cd repkg
+    xws pkg-all "$result_folder"
+)
+git add .
+git commit -m ...
+git push
+
+)
+

@@ -1,15 +1,21 @@
 (
 
-result_folder="$PWD/result"
+git clone x-cmd-repkg/x-cmd-repkg -b result x-cmd-repkg-result
+mkdir -p x-cmd-repkg-result/result
+result_folder="$PWD/x-cmd-repkg-result/result/result"
 
 git clone git@github.com:x-cmd/repkg repkg
 (
     cd repkg
     xws pkg-all "$result_folder"
 )
-git add .
-git commit -m ...
-git push
+
+(
+    cd x-cmd-repkg-result
+    git add .
+    git commit -m ...
+    git push origin result
+)
 
 )
 

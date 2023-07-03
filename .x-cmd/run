@@ -5,7 +5,7 @@ git clone x-cmd-repkg/x-cmd-repkg -b result x-cmd-repkg-result
 mkdir -p x-cmd-repkg-result/result
 result_folder="$PWD/x-cmd-repkg-result/result/result"
 
-# TODO: add token
+# Use ssh-key
 git clone git@github.com:x-cmd/repkg repkg
 (
     cd repkg

@@ -11,7 +11,7 @@ jobs:
     env:
       ___X_CMD_GHACTION_X: x2
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN_FOR_X_CMD_REPKG }}
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_FOR_SYNC }}
+      ssh_key: ${{ secrets.SSH_KEY_FOR_X_CMD_REPKG }}
       git_user: l
       git_email: l@x-cmd.com
       CONCURRENCY: 10
